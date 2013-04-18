@@ -1,0 +1,24 @@
+# ------------------------------------------------------------------------------
+# SCREEN SETTINGS
+# ------------------------------------------------------------------------------
+
+caption always "%{= Wk}%-w%{= Bw}%n %t%{-}%+w %-="
+vbell off
+term screen-256color
+screen -t bash 0 bash
+split
+focus down
+screen -t bash 1 bash
+select 0
+screen -t htop 2 htop
+select 1
+altscreen on
+
+# ------------------------------------------------------------------------------
+# SCREEN KEYBINDINGS
+# ------------------------------------------------------------------------------
+
+bindkey "" prev                               # change window with ctrl-left
+bindkey "" focus up                           # Focus on top screenith ctrl-right
+bindkey "" focus down                         # Focus on bottom of screen
+bindkey "" quit                               # F9 | Exit
