@@ -18,7 +18,10 @@ altscreen on
 # SCREEN KEYBINDINGS
 # ------------------------------------------------------------------------------
 
-bindkey "" prev                               # change window with ctrl-left
-bindkey "" focus up                           # Focus on top screenith ctrl-right
-bindkey "" focus down                         # Focus on bottom of screen
-bindkey "" quit                               # F9 | Exit
+# To get bindings - hold ctrl+v and while still holding ctrl down, select the button you want to bind to.
+
+bindkey "" next                               # ctrl+right  | Change window with ctrl-right arrow
+bindkey "" prev                               # ctrl+left   | Change window with ctrl-left arrow
+bindkey "" focus up                           # ctrl+up     | Focus on top screen 
+bindkey "" focus down                         # ctrl+down   | Focus on bottom of screen
+bindkey "" quit                               # F9          | Exit
